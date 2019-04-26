@@ -1,0 +1,6 @@
+/node-modules
+package-lock.json
+/.vscode
+/config/keys_dev.js
+node_modules
+node_modules
