@@ -25,9 +25,18 @@ class AddEducation extends Component {
     this.onCheck = this.onCheck.bind(this);
   }
 
-  componentWillReceiveProps(nextProps) {
+  // componentWillReceiveProps(nextProps) {
+  //   if (nextProps.errors) {
+  //     this.setState({ errors: nextProps.errors });
+  //   }
+  // }
+
+  static getDerivedStateFromProps(nextProps, prevState) {
     if (nextProps.errors) {
-      this.setState({ errors: nextProps.errors });
+      return {
+        ...prevState,
+        errors: nextProps.errors
+      };
     }
   }
   onSubmit(e) {

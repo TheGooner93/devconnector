@@ -12,7 +12,7 @@ class ProfileHeader extends Component {
               <div className="col-4 col-md-3 m-auto">
                 <img
                   className="rounded-circle"
-                  // src={profile.user.avatar ? profile.user.avatar : null}
+                  src={profile.user.avatar ? profile.user.avatar : null}
                   alt=""
                 />
               </div>
